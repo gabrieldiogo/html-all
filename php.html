@@ -1,0 +1,458 @@
+<html>
+<head>
+<style>
+body{
+background-image:url('img/php.jpg');
+background-attachment:fixed;
+
+}
+h1,p{
+color:red;
+text-align:left;
+}
+h2{
+color:yellow;
+}
+
+#menu ul{
+list-style:none;
+padding:0px;
+margin:0px;
+background:linear-gradient(to bottom, #ddd,#667);
+}
+#menu li{
+height:37px;
+display:table-cell;
+text-align:center;
+vertical-align:middle;
+width:100px;
+border-right:1px solid #062; 
+}
+#menu ul,li,a{
+text-decoration:none;
+font-size:30px;
+color:blue;
+
+
+}
+          	
+
+</style>
+</head>
+<body>
+
+
+											<nav id="menu">
+				<ul>
+					<li><a href="index.html" target="_self">home</a></li>
+					<li><a href="html5.html" target="_blank">html5</a></li>
+					<li><a href="css.html" target="_blank">css3</a></li>
+					<li><a href="php.html" target="_blank">php</a></li>
+					<li><a href="j.html" target="_blank">java sc</a></li>
+					
+					</ul>
+
+
+
+
+
+<h1>
+
+O que é PHP e para que serve?</h1>
+	<p>O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor )
+ é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o 
+ desenvolvimento web e que pode ser embutida dentro do HTML.
+</p>
+<section>
+				<h1>php<h1>
+
+<h2>inicio</h2>
+<p>?php
+echo"biel";
+?</p>
+		<h1>variavel<br>
+		
+		O que são variáveis em PHP?</h1>
+<p>Resultado de imagem para php variaveis
+Em termos práticos variáveis são estruturas de dados que podem ser modificadas em tempo de execução do código. Ou seja, você pode iniciar a variável em uma parte do código, e depois de atribuir outro valor a esta variável.
+ Toda variável em PHP começa com o caractere $ (cifrão) seguido do nome da variável, sem espaços.28 de nov. de 2012
+		
+		
+		
+		</p>
+<h2>?php
+	$variavel="biel";
+	$vanum=30,5;
+	echo"$variavel<br>";
+	$vsoma=10+3;
+	echo"soma:.$vsoma.<br>"
+	
+	
+	
+	?</h2>
+	<h1>costantes
+	<br>
+	O que são constantes em PHP?</h1>
+ <p>Você pode definir uma constante utilizando a função define(), ou a palavra-chave const fora da definição de uma classe a partir do PHP 5.3.0. Enquanto define() permite que uma constante seja definida
+ para uma expressão arbitrária, a palavra-chave const possui restrições conforme descrita no próximo parágrafo.
+	
+	</p>
+	<h2>
+	define ("nome","biel");
+		echo"costantes nome:".nome."<br>";</h2>
+	<h2>define("ver","PHP_VERSION");
+		echo"verao do php:".ver";
+	</h2>
+	<h1>operacoes com varaveis</h1>
+	<h2>
+	?php
+	$num1=10;
+	$num2=5;
+	$res=$num1+$num2;
+	ECHO"SOMA DE $NUM1 com $num2=$res(br/)";
+	<br>
+	</h2><h2>
+	$res = $num1 = $num2;<br>
+		$res=($num1 = $num2)*2;<br>
+		</h2><h2>
+		$res = num1 % num2;<br>
+			echo "resto da divisao de $num1 com $num2 = $res<br/>";
+	</h2>
+	<h2>
+	
+	
+	</h2>
+	$num1 =$num1 + 1;<br>
+		$num1++;<br>
+		echo "novo valora de num1;$num1";<br>
+		
+		
+	
+	</h2><h2>
+	$num2 =$num2 +2;<br>
+		$nom2+=2;<br>
+			echo"novo valor de num2: $num2"<br>
+			$num2+=10;
+	<h2>
+	<h2>
+		$num2*=10;<br>
+			$num2/=10;<br>
+			$num2=$num2 +10;
+		</h2>
+		<h1>arrays</h1><br>
+		<h1>
+		
+		Os arrays, ou então chamada de “matrizes” é um conjunto de dados ordenados. Servem para armazenar e recuperar qualquer tipo de dados, incluindo números, valores booleanos, strings, objetos e até mesmo outros arrays. Eles permitem o uso de chaves integer ou string.
+		</h1>
+		
+		<h2>
+		$vet=array(5);
+			<br>
+			$vet[0]="moto";<br>
+			$vet[1]="carro";<br>
+			$vet[2]="navio";<br>
+			$vet[3]="onibus";<br>
+			$vet[4]="bike";<br>
+		echo $vet[3];<br>
+		</h2>
+		<h1>matrizes</h1>
+	<h2>
+	$mat=array(array("carro1",70.000),array("carro2",40.000),array("carro3",2000));<br>
+		
+		echo "carro a".$mat [0][0]."-valor:".$mat[0][1];
+	
+	</h2>
+	<h1>
+	
+elseif , como seu nome sugere, é uma combinação de if e else . Como o else , ele estende um comando if para executar uma instrução diferente no caso da condição do if original vir a ser avaliada como FALSE .
+	</h1>
+	<h1>if else</h1>
+		<h2>
+		$nota=30;
+		<br>
+		if($nota >=70){
+		<br>
+		echo "aprovado";<br>
+		}else if($nota>=50){<br>
+echo "recuperacao"<br>
+}else{<br>
+echo"reprovado";
+
+
+		}
+		</h2>
+		<hr>
+		<h2>
+		$nota=50;<br>
+		if($nota >=40)&($nota <=40)){<br>
+		echo"selecionado";<br>
+		{}else{<br>
+		echo"fora";
+		</h2>
+		<hr>
+		<h1>
+		Qual é a utilidade de switch case em PHP?<br>
+A instrução switch-case é uma alternativa à instrução if-elseif-else, que faz quase a mesma coisa. A instrução switch-case testa uma variável em relação a uma série de valores até encontrar uma correspondência e, em seguida, executa o bloco de código correspondente a essa correspondência .
+
+		</h1>
+		<h1>switch case</h1>
+		<h2>
+		$opc=1;<br>
+		
+		switch($opc){<br>
+		<br>
+		case 1:<br>
+		echo"carro";<br>
+		break;<br>
+		<br>
+		case 2:<br>
+		echo"moto";<br>
+		break;<br>
+		<br>
+		default:<br>
+		echo"invalid";<br>
+		break;
+		
+		}<br>
+		<br>
+		switch ($opc){<br>
+		<br>
+		case($opc <= 3 and $$opc >0):<br>
+		<br>
+		echo"diferente";<br>
+		break;<br>
+		<br>
+		case 4:<br>
+		echo"marinho";<br>
+		break;<br>
+		case 5:<br>
+		echo"ar";<br>
+		break;<br>
+		}
+		
+		</h2>
+		<hr>
+		
+		<h1>
+		
+		Como você faz um loop while no PHP?<br >
+O loop do ... while - Faz um loop em um bloco de código uma vez e, em seguida, repete o loop enquanto a condição especificada for verdadeira.
+		</h1>
+		<h1>loop while</h1>
+		<h2>
+		$i=0;<br>
+		$tam=10;<br>
+		<br>
+		while($i < 10){<br>
+		echo"valor de i : $i";
+		
+		}<hr><br>
+		
+		
+		
+		$i=0;<br>
+		$tam=10;<br>
+		$vet=array($tam);<br>
+		while($i < $tam){<br>
+			echo"valor de i: $i <br/>";<br>
+			$i++;<br>
+		}
+		echo"<br/><br/><br/>";<br>
+		
+		$i=0;<br>
+		while($i < $tam){<br>
+			$vet[$i]=0;<br>
+			$i++;<br>
+		}
+		$i=0;<br>
+		while($i < $tam){<br>
+		echo"$vet [$i]<br/>";<br>
+		$i++;<br>
+		}
+		
+		
+		</h2>
+		<h1>loop do wile</h1>
+		<h2>
+		$i=9;<br>
+		$tam=5;<br>
+		<br>
+		do{<br>
+		echo"variavel tem o valor :$i";<br>
+		echo"variavel $tam tem o valor:$tam";<br>
+		$i++;<br>
+		
+		<br>
+		}
+		wile($i <$tam){<br>
+		echo"loop";<br>
+		}
+		<br>
+		$i=4;<br>
+		$tam=7;<br>
+		<br>
+		while($i <$tam){<br>
+		<br>
+		
+		<br>
+		echo"variavel tem o valor :$i";<br>
+		echo"variavel $tam tem o valor:$tam";<br>
+		$i++;<br>
+		}
+		</h2>
+		<h1>
+		O loop foreach no PHP é uma estrutura de repetição simples e flexível! Aprenda corretamente como utilizar para percorrer arrays e outras estruturas no PHP. O foreach no PHP é uma estrutura de repetição extremamente flexível e simples.<br>
+		Como usar o for em PHP?
+A ideia básica do for é criar um laço de repetição, onde o mesmo recebe uma condição e incrementa a mesma até ser falsa. Veja um exemplo de Sintaxe: <? php for($i =1; $i < 20; $i++){ echo "O Valor de I = ".
+		
+		</h1>
+		<h2>
+		
+		$i=0;<br>
+		$tam=5;<br>
+		$vet=array($tam);<br>
+		for($i=0; $i < $tam;  $i++){<br>
+			echo"valor i: $i <br>"; <br>
+		}<br>
+		echo"<hr>";
+		for($i=0; $i < $tam; $i++){<br>
+			$vet[$i]=0;<br>
+		}
+		for($i=0; $i < $tam; $i++){<br>
+			echo"valor da posisao $i: $vet[$i] <br>";<br>
+		}
+		
+		</h2>
+		<h1>
+		Como o loop foreach funciona em PHP?
+O loop foreach é usado principalmente para percorrer os valores de uma matriz . Ele faz um loop no array e cada valor do elemento atual do array é atribuído a $ value, e o ponteiro do array é avançado em um para ir para o próximo elemento no array. Sintaxe: ... php foreach (array as $ value) { código a ser executado; }
+		</h1>
+		
+		
+		<h2>
+		$trans=array("carro","moto","bike","aviao");<br>
+		foreach($trans as $veiculo){<br>
+		echo"$veiculo <br>";<br>
+		<br>
+		foreach($trans as $veiculo){<br>
+		if($veiculo == "bike")<br>
+		echo"esta";<br>
+		if($veiculo == "trem")<br>
+		echo"sim";<br>
+		elseecho"nao"<br>
+		
+		}
+		
+		}
+		
+		</h2>
+		<h1>
+		Como encerramos um comando no PHP?
+A sintaxe do comando do break é esta: break; No código abaixo encerramos a execução do while imediatamente após o contador $i alcançar o valor “3”. Como resultado serão impressos apenas os valores “1 2”, em lugar de “1 2 3 4”.
+		
+		</h1>
+		<h2>
+		$vet=array("mause","tec","tela","ram","sair","son","impr");<br>
+		<br>
+		$tam=count($vet);<br>
+		$i=0;<br>
+		<br>
+		echo"loop while";<br>
+		$i++;<br>
+		
+		while($i < $tam){<br>
+		echo"$vet [$i]";<br>
+		$i++;<br>
+		if($vet [$i] == "sair")<br>
+		break;<br>
+		}}<hr>
+		for($i=0; $i < $tam; $i++  ){<br>
+		echo"$vet [$i]";<br>
+		if($vet[$i] == "sair"){<br>
+		break;<br>
+		
+		}
+		}
+		<hr>
+		foreach($vet as $pc){<br>
+		echo"$pc";<br>
+		if($pc == "sair";<br>)
+		break;}
+		
+		<hr>
+		for($i=0; $i < $tam; $i++  ){<br>
+	
+		if($vet[$i] == "sair"){<br>
+		break;<br>
+		
+		}<br>
+		
+		echo"$vet [$i]";<br>
+		
+		}
+		<hr>
+		$i=0;
+		do{<br>
+		<br>
+		echo"$vet[$i] ";<br>
+		$i++;<br>
+		if($vet [$i] == "sair");{<br>
+		break;<br>
+		}}while($i< $tam);
+		
+		
+		</h2>
+		<h1>
+		
+Resultado de imagem para função php
+Função em PHP é um trecho de código que pode ser chamado (invocado) de qualquer parte do código para executar uma tarefa qualquer e retornar algum valor. Ou seja, você pode chamar quantas vezes forem necessárias a função.4 de dez. de 2012
+		
+		</h1>
+		
+		<h2>
+		$valores=array(1,3,5,7,9,12,6,15);<br>
+		function media($val){<br>
+		$tam=count($val);<br>
+		$soma=0;<br>
+		for($i=0; $i <$tam; $i++){<br>
+		$soma+=$val [$i];<br>
+		}<br>
+		return $soma/$tam;<br>}
+		$med=media($valores);<br>
+		echo"media =$media";
+		}
+		
+		}
+		}
+		
+		
+		</h2>
+		<h1>
+		dados do formulario
+		</h1>
+		<h2>
+		
+$vnome=$_post["f_nome"];<br>
+$vsenha=$_post["f_senha"];<br>
+echo"nome:".$vnome."</br>".$vsenha."<br>";
+		
+		</h2>
+		<h1>
+		funsoes recusivas
+		</h1>
+		<h1>
+		Para que serve funções recursivas?
+Recursividade é o mecanismo de programação no qual uma definição de função ou de outro objeto refere-se ao próprio objeto sendo definido. Assim função recursiva é uma função que é definida em termos de si mesma. Recursividade é o mecanismo básico para repetições nas linguagens funcionais.
+		</h1>
+		<h2>
+		function aula($num){<br>
+		if($num !=0){<br>
+		echo"funsao aula com o valor: $num";<br>
+		aula($num =1);<br>
+		}}<br>
+		aula(10);
+		
+		</h2>
+</body>
+
+</html>

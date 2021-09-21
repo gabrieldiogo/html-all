@@ -1,0 +1,1172 @@
+<!doctype html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="css/css.css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+			<style>
+				body{
+				background: #fff  url(img/fu/fu.jpg) no-repeat center 0px / 1200px 800px;
+				background-attachment:fixed;
+				
+				
+				}
+					</style>
+
+	
+</head>
+							
+							
+							
+							<body>
+							
+							<marquee><h1>apredendo o pincel css!!!</h1></marquee><br>
+							
+							
+							<nav id="menu">
+				<ul>
+					<li><a href="index.html" target="_self">home</a></li>
+					<li><a href="html5.html" target="_blank">html5</a></li>
+					<li><a href="" target="_self">css3</a></li>
+					<li><a href="" target="_blank">php</a></li>
+					<li><a href="j.html" target="_blank">java sc</a></li>
+					
+					</ul>
+   </nav><br>
+
+							
+															<section>
+															
+															
+															
+								<article>
+										<h1>CENTRALIZANDO COISAS</h1>
+											
+											
+											<h1>A chave para a solução é: </h1>
+											
+											<h2>Declare o container posicionado de forma relativa com a finalidade de criar um contexto de posicionamento para os elementos posicionados de forma absoluta dentro dele, container.
+Posicione o elemento dentro do container de forma absoluta.
+Declare, para o elemento dentro do container, coordenada 'top' de posicionamento igual a 50%. (Notar que 'top: 50%' significa 50% da altura do container.)
+Use 'translation' para deslocar o elemento dentro do container de um valor igual a metade da sua (do elemento) altura. (O valor '50%' em 'translate(0, -50%)' se refere à altura do próprio elemento.)
+Recentemente (desde 2015), criou-se outra técnica em diversas implementações das CSS. Tais técnicas se baseiam no novo valor 'flex' para a propriedade 'display'. Esse valor foi criado para uso em interfaces gráficas de usuário (GUIs), mas nada impoede que você a use em um documento desde que o documento seja estruturado correta e adequadamente, conforme exemplo mostrado a seguir: </p>
+
+<p>As CSS3 oferecem outras possibilidades. No ano atual (2014), uma boa solução para centralizar verticalmente sem uso de posicionamento absoluto (que pode causar "overlapping" do texto) ainda está sendo discutido. Mas, caso o "overlapping" do texto não seja um problema no seu documento, você poderá usar a propriedade 'transform' para centralizar um elemento posicionado de forma absoluta, como mostrado a seguir:
+
+ </h2>
+				
+										</article>
+								<article>
+										<h1>CENTRAR NA VERTICAL E NA HORIZONTAL COM CSS3 </h1>
+											<p>Podemos combinar os dois métodos mostrados anteriormente para centrar na horizontal e na vertical ao mesmo tempo.
+
+Um efeito colateral de se declarar o parágrafo posicionado de forma absoluta é que ele assumirá uma largura estritamente necessária (a não ser, obviamente, que se declare explicitamente uma largura). No exemplo mostrado a seguir é exatamente isso que queremos: Centralizamos um parágrafo com uma só palavra ("Centralizado!") e sua largura é exatamente igual a largura da palavra. Observe a seguir: </p>
+	
+		<p>O fundo na cor amarela foi declarado com a finalidade de mostrar que a largura do parágrafo é exatamente a mesma largura do seu conteúdo (da palavra "Centralizado!"). Para o próximo exemplo considere a mesma marcação do exemplo anterior: </p>
+		
+		</article>
+					<article>
+								<h1>CENTRAR NA VERTICAL E NA HORIZONTAL COM CSS3 </h1>
+								
+										<p>ou seja, o único acréscimo foi a declaração 'justify-content: center'. Tal como previsto na especificação, a funcionalidade 'align-items' controla o alinhamento vertical dos conteúdos de um container 'flex' e a funcionalidade 'justify-content' controla o alinhamento horizontal daqueles conteúdos. (Na realidade estas funcionalidades são um pouco mais complexas do que seus nomes sugerem, mas em resumo esse exemplo simples mostra como funciona o alinhamento com uso de 'flex'). Um efeito colateral de 'flex' é que o elemento-filho, P nesse exemplo, assume a menor largura possível. </p>
+											<p> A viewport é o container "default" para elementos posicionados de forma absoluta. (Tratando-se de navegadores a viewport é a janela do navegador). Assim, centrar um elemento na viewport é uma tarefa bem simples. Observe a seguir um exemplo completo criado com sintaxe HTML5:</p>
+								
+							</article>
+								</section>
+								<br class="clear">
+								
+					
+<hr/>
+
+												<h1> css </h1>
+												
+												
+												
+<dl>
+<dt>text-decoration- configuracao de texto decoracao
+
+<dd> underline,overline,line-trough
+</dl>
+<dl>
+<dt>text-align tesxo alinhamento
+<dd> center,left,right,justify
+<dd>espaco do texto-=text-indent:100px
+
+</dl>
+<dl>
+<dt>testo formato-text-trasform-primeira letra
+<dd>uppercase,lowercase,capitalize
+<dd>font-family:==arial,verdana
+<dd>tamanho do texto=-font-size:25px
+<dd>centralizar=-padding-left;20px
+<dd>destaca palafra==(span style="color:red;font-weight:bold")Cascading(/span)
+<dd>2 =(span style="color:red;font-weight:bold;text-decoration:underline")
+
+
+<dl>
+<dt>como aplicar o css
+<dd>inline= estilos aplicados diretamente em um elemento htma
+<dd>incorporado=o elemento style permite aplica varias regras de uma vez no  propio documento html
+<dd>folhas de estilos externas=um documento com extensao css permite aplica regras a um website inteiro de uma vez
+</dt>
+<dt>os estilos sao aplicados na ordem em qeu sao encontrados cascateando dos estilos externos ate os estilos inline
+</dt>
+</dl>
+<h3>Na sintaxe de uma regra CSS, escreve-se o seletor e a seguir a propriedade e valor separados por dois pontos e entre chaves <br>    <span  color:blue ;>dl {propriedade:valor; } </span> <br>. Quando mais de uma propriedade for definida na regra, deve-se usar ponto-e-vâ”œÂ»â”¬â”â”¬â•œrgula para separâ”œÂ»â”¬â”â”¬â•œ-las.
+</h3><br>
+<p>p{ text-align;center;colo:yellow;font-size:20px:}
+</p><br>
+<h3>seletor universal-<br> <span  color:blue ;>*{color:green;}<br></span>=todosos elementos do documento terao a cor verde 
+</h3><br>
+<h3>seletor de elemento <br> <span  color:blue ;>p{color:red;}</span><br>-todos os paragrafos terao a cor vermelha
+</h3><br>
+<h3>h1<{color:yellow;}</h3><br>
+<p>tipo de seletores</p>
+<dl>
+<dt>seletor de clase:aplica estilos a elemento com o atrbuto class definido
+<dd>.verde{color:green;}- aplica verde ao elemento q posui class=verde
+<dd>h1.verde{color:green;}- elemento h1que posui elemento class=verde
+</dt>
+<dt>seletor de id :aplica estilo a elementos com o atributo id definido
+<dd>#corazul{color:blue;}-aplica no id="corazul"
+<dd>h1#corazul{color:blue;}-id="corazul"
+</dt></dl>
+
+
+
+						<h1>cores codigo</h1>
+<p>prreto k 000000<br>
+branco w ffffff <br>
+vermelho r ff0000<br>
+verde g 00ff00<br>
+azul a 0000ff<br>
+ciano c 00ffff<br>
+mageta m ff00ff<br>
+amarelo y ffff00<br>
+</p>
+<br><br>
+<hr/>
+
+
+
+<header class="tt">
+
+	<section >
+		<h1 class="txt">referece</h1><br>
+		<br>
+		<p id="p1" >align-content	Specifies the alignment between the lines inside a flexible container when the items do not use all available space
+align-items	Specifies the alignment for items inside a flexible container
+align-self	Specifies the alignment for selected items inside a flexible container
+all	Resets all properties (except unicode-bidi and direction)</p><br>
+
+	<p>animation	A shorthand property for all the animation-* properties
+animation-delay	Specifies a delay for the start of an animation
+animation-direction	Specifies whether an animation should be played forwards, backwards or in alternate cycles</p><br>
+
+	<span>animation-duration	Specifies how long an animation should take to complete one cycle
+animation-fill-mode	Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)</span><br>
+
+	<span>animation-iteration-count	Specifies the number of times an animation should be played
+animation-name	Specifies a name for the @keyframes animation
+animation-play-state	Specifies whether the animation is running or paused
+animation-timing-function	Specifies the speed curve of an animation</span><br>
+		
+		</section>
+										<section class="tt">
+		
+		<h1>(b)</h1><br>
+		<h3 id="p1" class="im">backface-visibility	Defines whether or not the back face of an element should be visible when facing the user
+background	A shorthand property for all the background-* properties
+background-attachment	Sets whether a background image scrolls with the rest of the page, or is fixed
+background-blend-mode	Specifies the blending mode of each background layer (color/image)
+background-clip	Defines how far the background (color or image) should extend within an element
+background-color	Specifies the background color of an element
+background-image	Specifies one or more background images for an element
+background-origin	Specifies the origin position of a background image
+background-position	Specifies the position of a background image
+background-repeat	Sets if/how a background image will be repeated
+background-size	Specifies the size of the background images
+border	A shorthand property for border-width, border-style and border-color
+border-bottom	A shorthand property for border-bottom-width, border-bottom-style and border-bottom-color
+border-bottom-color	Sets the color of the bottom border
+border-bottom-left-radius	Defines the radius of the border of the bottom-left corner
+border-bottom-right-radius	Defines the radius of the border of the bottom-right corner
+border-bottom-style	Sets the style of the bottom border
+border-bottom-width	Sets the width of the bottom border</h3><br>
+	
+	
+	<h4>border-collapse	Sets whether table borders should collapse into a single border or be separated
+border-color	Sets the color of the four borders
+border-image	A shorthand property for all the border-image-* properties
+border-image-outset	Specifies the amount by which the border image area extends beyond the border box
+border-image-repeat	Specifies whether the border image should be repeated, rounded or stretched
+border-image-slice	Specifies how to slice the border image
+border-image-source	Specifies the path to the image to be used as a border
+border-image-width	Specifies the width of the border image
+border-left	A shorthand property for all the border-left-* properties
+border-left-color	Sets the color of the left border
+border-left-style	Sets the style of the left border
+border-left-width	Sets the width of the left border</h4><br>
+	
+	
+	<h5>border-radius	A shorthand property for the four border-*-radius properties
+border-right	A shorthand property for all the border-right-* properties
+border-right-color	Sets the color of the right border
+border-right-style	Sets the style of the right border
+border-right-width	Sets the width of the right border
+border-spacing	Sets the distance between the borders of adjacent cells
+border-style	Sets the style of the four borders
+border-top	A shorthand property for border-top-width, border-top-style and border-top-color
+border-top-color	Sets the color of the top border
+border-top-left-radius	Defines the radius of the border of the top-left corner
+border-top-right-radius	Defines the radius of the border of the top-right corner
+border-top-style	Sets the style of the top border</h5><br>
+	
+	<h6>border-top-width	Sets the width of the top border
+border-width	Sets the width of the four borders
+bottom	Sets the elements position, from the bottom of its parent element
+box-decoration-break	Sets the behavior of the background and border of an element at page-break, or, for in-line elements, at line-break.
+box-shadow	Attaches one or more shadows to an element
+box-sizing	Defines how the width and height of an element are calculated: should they include padding and borders, or not
+break-after	Specifies whether or not a page-, column-, or region-break should occur after the specified element
+break-before	Specifies whether or not a page-, column-, or region-break should occur before the specified element
+break-inside	Specifies whether or not a page-, column-, or region-break should occur inside the specified element</h6>
+		
+		</section>
+	
+	</header>
+
+
+<hr>
+
+	
+	<div id="d1">html</div><br>
+	<div id="d2">css</div><br>
+	<div id="d3">java</div><br><br>
+
+
+				<h2>background attachment</h2><br>
+				
+		
+	<div id="d3"></div><br>
+	<div id="d4"></div><br>
+	
+	<p id="ff">curso</p><br>
+	<p id="fff">de css a liguagem</p><br>
+	<p id="ff">formatacao de paginas</p><br>
+
+<div id="d5"><p>bordas radius</p></div><br>
+
+
+<div id="d6"><p>bordas redondas</p></div><br>
+<hr>
+
+<h2>border com imagem</h2><br>
+
+	<p id="p">curso de css</p><br>
+
+
+<div id="d7">
+<p>curso de css<p/>
+</div>
+
+	<div id="d8">
+	<p>curso de html</p>
+	</div><br>
+	
+	<h1>padding -codigo</h1><br>
+	
+	
+	
+		<div id="d9"> curso de hatml e css </div><br>
+			<div id="d10">
+			<h2> 
+				#main h2{
+	font-size:20px;
+	boder-bottom:#000 solid 1px;
+}<br>
+#main h1{
+	font-size:60px;
+	
+}<br>
+#main p{
+text-align:justify;
+} <br>
+footer{
+	color:#888;
+	border:#000 solid 1px;
+}<br>
+footer p{
+	display:inline-block;
+	width:316px;
+	text-align:center;
+}<br>
+.tt p ,span{
+	color:green; font-size:20pt;
+	
+}<br>
+#p1{
+	color:brow;
+}<br>
+.txt{
+	color:#0f0;font-size:30pt;
+}<br>
+.tt{
+	text-align:center;color:green;font-size:20pt
+	font-weight:lighter;font-size:20pt;
+}<br>
+
+#menu ul{
+list-style:none;
+padding:0px;
+margin:0px;
+background:linear-gradient(to bottom, #ddd,#667);
+}<br>
+#menu li{
+height:37px;
+display:table-cell;
+text-align:center;
+vertical-align:middle;
+width:100px;
+border-right:1px solid #062; 
+}<br>
+#menu ul,li,a{
+text-decoration:none;
+font-size:30px;
+color:blue;
+
+
+}<br>
+
+	
+
+
+.im{
+	background-image:url(fg.jpg);
+	
+}<br>
+#d1 ,#d2 , #d3{
+	border:10px dotted #000;
+	padding:35px;
+	background-color:#0f0;
+}<br>
+#d1{
+	background-clip:border-box;
+}<br>
+#d2{
+	background-clip:padding-box;
+}<br>
+#d3{
+	background-clip:content-box;
+}<br>
+
+#bbody{background-image:url(fc.jpg) ;
+	background-size:3600px 800px ,200px;background-repeat:no-repeat ,repeat;
+	background-position:5px 100px ,200px;
+
+	
+}<br>
+#d3{
+	width:500px; height:500px;
+	background-color:#ddd;
+	border-style:ridge;
+	border-width:20px;
+	boder-color:red;
+	
+}<br>
+
+#d4{
+	width:500px; height:500px;
+	background-color:#ddd;
+	border-style:outset;
+	border:#00ff solid 20px
+	
+}<br>
+#ff{
+	border-top:#000 solid 10px;
+	border-right:#00ff double 10px;
+	border-bottom:#f00 dotted 10px;
+	border-left:green groove 20px
+	
+	
+}<br>
+#fff{
+	border-top-width:20px;
+	border-right-width:20px;
+	border-bottom-width:20px;
+	border-left-width:20px;
+	
+	border-top-style:solid;
+	border-right-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	
+	border-top-color:#f00;
+	border-right-color:#0f0;
+	border-bottom-color:#f00;
+	border-left-color:#00f;
+}<br>
+#d5  {
+	width:400px;
+	height:100px;
+	
+	border:#000 solid 20px;
+	border-radius:0px 40px 0px;
+}<br>
+#d6{
+	width:100pxpx;
+	height:100px;
+	
+	border:#0f0   dashed 20px ;
+	border-radius:100% ;
+}<br>
+#d6 p{
+	text-align:center; color:blue; font-size:30px;
+}<br>
+#p{
+	border:30px solid;
+	border-image:url(img/fu/fgg.jpg) 30 stretch;
+}<br>
+#d7 {
+	border:1px solid #000;
+	margin:50px 200px 300px 50px;
+	margin-auto;
+}<br>
+#d8{
+	border:10px solid red;
+	margin-top:150px;
+	margin-right:400px;
+	margin-boder-bottom:300px;
+	margin-left:10px;
+	margin-auto;
+}<br>
+#d7 p{
+	border:1px solid #f00;
+	margin:0px;
+	text-align:center;
+}<br>
+#d9 {
+border:1px solid red;
+margin:100px;
+padding:100px;
+width:500px;
+}<br>
+#d10{
+	border:1px solid red;
+	padding:50px;
+}<br>
+				</h2>
+			</div><br>
+
+
+				<h1>gradient</h1><br>
+		
+		<div id="d11">hello word</div><br>
+		
+		<div id="d12"></div><br>
+	
+	<h2>
+	  linear-gradient{<br>
+	width:300px;<br>
+	height:300px;<br>
+	border:1px #000 solid;<br>
+	background:linear-gradient (90deg ,red ,yellow green );
+} 
+	 
+	 </h2><br>
+	
+	<h2>
+	 linear(to left,red ,blue,10%)-(45deg,red,blue 10%)
+	 
+	 </h2><br>
+	 
+	 <h2> radial-gradient(circle,red,blue 10%)</h2><br>
+
+	<h2 id="hh">reapeating-radial-gradient</h2>	<br>			
+								
+			<h1> 
+				 h1{
+	 font-size:50px;
+	 background:linear-gradient(to left ,red 30% ,yellow ,green);
+	 -webkit-text-fill-color:transparent;
+	 -webkit-background-clip:text;
+ }
+				</h1><br>	
+
+<h2 id="h22">
+text shadow sombra
+</h2><br>
+
+					<div id="dv"></div><br>
+					<h2> 
+					shadow{
+	 font-size:50pt;
+	 color:green;
+	 text-shadow:5px 5px 10px yellow,10px 10px 5px red  ;</h2><br>
+	 
+<h2> }
+ div{width:300px ;height:300px; <br>
+ border:1px solid #000;<br>
+ box-shadow:10px 10px 5px red;<br>
+ }
+						</h2><br>
+						<h1>formatacao txt</h1><br>
+						
+	<p class="p1">
+	Os aplicativos da Web desempenham um papel muito importante no mundo de hoje. A Internet tomando conta de quase tudo precisa de páginas da web de designer . Os usuários devem ser atraídos para determinadas páginas da web para que sejam mais acessados. A função das folhas de estilo em cascata (CSS) é, portanto, muito importante. CSS trabalha junto com HTML e fornece um estilo e estrutura básicos. Ele define como os elementos HTML serão exibidos na página da web. CSS3 é a versão mais recente do CSS. Ele fornece recursos do tipo JavaScript . Além disso, ele também fornece recursos de desenvolvimento móvel . Ele também possui recursos adicionais como imagens, gradiente, transição, etc. Vamos dar uma olhada na diferença entre CSS e CSS3.
+	</p><br>
+	<p class="p2">
+	Tanto o CSS quanto o CSS3 são escolhas populares no mercado; vamos discutir algumas das principais diferenças entre CSS e CSS3:
+
+A principal diferença entre CSS e CSS3 é que CSS3 tem módulos. O CSS é a versão básica e não oferece suporte a design responsivo. CSS3, por outro lado, é a versão mais recente e oferece suporte a design responsivo.
+CSS não pode ser dividido em módulos, mas CSS3 pode ser dividido em módulos . Sendo uma versão mais antiga do CSS é mais lento que o CSS3.
+Além disso, o CSS3 tem muitos recursos de alinhamento. CSS3 fornece
+	</p><br>
+	<p class="p3">
+	uma ferramenta de dimensionamento de caixa que permite ao usuário obter o tamanho correto de qualquer elemento sem fazer nenhuma alteração nas dimensões ou preenchimento do elemento. CSS não tem nenhuma ferramenta de dimensionamento de caixa e, portanto, o usuário precisa usar os procedimentos padrão definidos para alinhar o texto.
+As animações e transformações 3D são melhores em CSS3 . Os elementos podem ser movidos na tela com a ajuda de flash e JavaScript. Com isso, os elementos também poderão mudar seu tamanho e cor. Todos os tipos de
+	</p><br>
+	<p class="p4">
+	transições, transformações e animações podem ser feitos usando CSS3. CSS não fornece animação e transformações 3D.
+CSS fornece esquema de cores básico e cores padrão. CSS3 suporta RGBA, HSLA, HSL e cores gradientes. Ele também oferece suporte a cantos de imagem arredondados para caixas de texto.
+Os blocos de texto com várias colunas podem ser definidos em CSS3. CSS só oferece suporte a blocos de texto únicos.
+	</p><br>
+				
+	<dl>
+	<dt>text-decoration
+	<dd>underline -linha baixa
+	<dd>overline -linha alta
+	<dd>through
+	</dt>
+	</dl>	<br>
+
+	<dl>
+	<dt>text-transform
+	<dd>lowercase -letras minusculas
+	<dd>uppercase - letras maiuscolas
+	<dd>capitalize -primeiras letras maiuscolas
+	</dt>
+	</dl><br>
+<dl>
+	<dt>text-align
+	<dd>left -esquerda
+	<dd> right -direita
+	<dd> justify-anbos
+	</dt>
+	</dl>	<br>
+	<h1 >link</h1><br>
+
+	<a class="a" href="https://youtu.be" target="">yotube</a>
+		<a class="a" href="http://google.com">gog</a>
+			<a class="a" href="http://facebbock.com">fa </a>
+			<h2>.aa{
+	text-decoration:none; color:blue;
+font-size:20px;	
+background-color:pink;
+padding:20px;
+display:table-cell;
+	}<br>
+#av:visted{
+	color:red;
+}<br>
+#ac:active{
+	color:purple;
+}	<br>
+#ah:hover{
+	background-color:yellow;
+} </h2><br>
+
+<nav class="a">
+<object  id="obmenu" data="link.html"></object>
+</nav><br>
+
+<h1>transform 2d</h1><br>
+
+
+	<h2>
+	transform:translate(200px ,200px);-move<br>
+	transform:rotate(45 deg); -rotacao<br>
+	transform:skewX(20 deg);-rota y-vertical-x-orizontal<br>
+	transform:matrix(scaleX ,skewY,skewX,scaleY,translateX,translateY);-mesclagem<br>
+	transform:matrix(0,5,0,0,0,5,0,0);-mesclagem<br>
+	transform:origin:0% 0%; -	</h2><br>
+	<h1>formatacao de listas ol</h1><br>
+	
+		<ol>
+	<li>text-decoration</li>
+	<li>underline -linha baixa</li>
+	<li>overline -linha alta</li>
+	<li>through</li>
+	
+	</ol>	<br>
+
+	<ul>
+	
+	<li>lowercase -letras minusculas</li>
+	<li>uppercase - letras maiuscolas</li>
+	<li>capitalize -primeiras letras maiuscolas</li>
+	
+	</ul><br>
+	<h2>text-style:decimal-leading-zero outside;<br>sema marcadores-list-style:none;</h2><br>
+	
+		<h1>tabelas format</h1><br>
+		
+		<table>
+		<tr>
+		<th class="t1">paça</th><th class="t1">valor</th><th class="t1">estoque</th>
+		</tr>
+		<tr>
+		<td>procesador</td><td>r$800</td><<td>20</td></tr>
+		<tr>
+		<td>memoria ram</td><td>r$150</td><td>30</td>
+			</tr>
+		<tr>
+			<td>hd</td><td>r$80</td><td>20</td>
+			</tr>
+		<tr>
+			<td>son</td><td>r$40</td><td>10</td>
+		</tr>
+				<tr>
+			<td>teclado</td><td>R$30</td><td>300</td>
+		</tr>
+			<tr>
+				<td>mouse</td><td>100</td><td>300</td>
+				</tr>
+				
+			
+		</table><br>
+				<h2>codigo-<br><br>
+				
+					
+				table{
+		width:600px;
+		table-layout:fixed;
+	}<br>
+	td ,th{
+		height:50px;
+		vertical-align:middle;
+	}<br>
+	th{
+		background-color:#8a8;
+		color:#fff;
+		font-size:25px;
+	}<br>
+	tr:nth-child(even){
+		background-color:#ddd;
+	}
+	
+				
+				</h2><br>
+				<h1>outline</h1><br>
+			<div class="div" id="sd1">csss</div>
+			<div class="div" id="sd2">htmll</div>
+		<br>
+		<h1>display</h1><br>
+		<br class="divv">
+			<div id="b1">
+			div 1
+			</div>
+			<span id="s1">apan 1</span>
+			<div id="b2">div2</div>
+			<span id="s2">span2</span>
+		
+		<br class="c1">
+		<div>div</div>
+		
+		<ol class="tit">
+		<ul>
+	<li>cor</li>
+	<li>form</li>
+	<li>objetos</li>
+	</ul>
+	
+	<ul>	
+
+	
+	
+	<li>lowercase -letras minusculas</li>
+	<li>uppercase - letras maiuscolas</li>
+	<li>capitalize -primeiras letras maiuscolas</li>
+	
+	</ul>
+	<ul>
+	<l1>cor</li>
+	<li>forma</l1>
+	<li>verde</li>
+	</ul>
+	</ol>
+	<br class="x1">
+	<header >
+	<section >
+		<div id="x1">css1</div>
+		<div id="x2">css2</div>
+		<div id="x3">css3</div>
+		<div id="x4">css4</div>
+		<div id="x5">css5</div>
+		<div id="x6">css6</div>
+		
+	</section>
+		</header><br>
+		
+		
+		
+			<header><h1>cabecalho</h1></header>
+			<nav>
+			<a>menu 1</a>
+			<a>menu 2 </a>
+			<a>menu 3 </a>
+			<a>menu 4 </a>
+			<a>menu 5 </a>
+			<a>menu 6 </a>
+			
+			</nav>
+			<section>
+			 <div>css1</div>
+			 <div>css2</div>
+			 <div>css3</div>
+			 <div>css4</div>
+			 <div>css5</div>
+			 <div>css6</div>
+			 <div>css7</div>
+			 <div>css8</div>
+			 <div>css9</div>
+			 <div>css10</div>
+			 
+				</section>
+				<footer>
+				<p>html css java</p>
+				</footer>
+			
+		<h2>
+		configuracao para versoes do nevegador<br>
+		diplay:-webkit-flex <br>
+		diplay:-mor-flex
+			</h2><br>
+			<h2>menu flexivel</h2>
+<br>
+<a href="css/css/desafio.html"><strong style="font-size50px;">flex =conteudo ajustavel --link</strong></a><br>			
+			<h2>codigo<br></h2>
+			<p>
+			.x1 ,section{
+	border:3px solid #f00;
+	display:flex;
+	
+}<br>
+.x1  ,div{
+	border:1px solid #000;
+	height:50px;
+	flex:1;
+	
+}<br>
+#x1{
+	order:2 ;
+	flex-grow:1;<br>
+	<h1>posicion e z -index</h1><br>
+	<a href="css/css/zindex.html"><strong>position zindex</strong></a><br>
+	
+	
+	<img id="img1" src="img/skas.jpg"><img id="img2" src="img/skas.jpg">
+		
+			<p>
+				
+A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr, onde textos e elementos em linha irão se posicionar ao seu redor.
+				</p>
+				
+				<p>
+				
+A propriedade clear do CSS especifica se um elemento pode ter elementos flutuantes ao seu lado ou se devem ser movidos para abaixo dele (clear). Essa propriedade se aplica à elementos flutuantes ou não flutuantes.
+					
+					</p>
+					<p>
+					
+É aí que entra a propriedade clear. Ela tem a função de controlar o comportamento de elementos que apareçam no fluxo do documento após determinado elemento que possue a propriedade float.
+						</p>
+						<br>
+				<h1>overflow</p><br>
+			<div id="l1">
+			<img id="im1" src="img/can.jpg">
+			<p>A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado 		
+A propriedade clear do CSS especifica se um elemento pode ter elementos flutuantes ao seu lado ou se devem ser movidos para abaixo dele (clear). Essa propriedade se aplica à elementos flutuantes ou não flutuantes.
+					 </p>
+				</div><br>
+				<h1>after ,before</h1><br>
+				<p> 
+				before cria um pseudo-elemento que é o primeiro filho do elemento atingido. É frequentemente utilizado para adicionar conteúdo decorativo à um element
+				</p>
+				<p>
+					Como usar After e Before no CSS?
+O primeiro passo é selecionar a qual div o pseudo-elemento irá se relacionar (neste caso, a div com a classe elemento) e em seguida indicar para o navegador se o pseudo-elemento será inserido antes (:before) ou depois (:after) do elemento indicado.
+					</p>
+					<p>
+						O que é o after CSS?
+Em CSS, ::after cria um pseudo-elemento que é o último filho do elemento selecionado. Muitas vezes é usado para adicionar e melhorar o conteúdo de um elemento como a propriedade content .
+						
+						</p><br>
+						
+						<h2>codigo<br>
+						
+						p::berfore{
+	content:"direita";
+	color:red;
+}<br><br>
+com class<br>
+p .class ::after{
+	content:url(esquerda.jpg );
+}
+		<br>					
+							</h2><br>
+							<h1>first-letter in first-line</h1><br>
+							
+							<p>
+								Em CSS, o pseudo-elemento :: first-letter se aplica a contêineres do tipo bloco, como elementos de bloco, item de lista, célula de tabela, legenda de tabela e bloco embutido. Em CSS, um pseudo-elemento :: de primeira linha é semelhante a um elemento de nível embutido se sua propriedade 'float' for 'none'; caso contrário, é semelhante a um elemento flutuante.
+								</p>
+								<p>
+									O pseudoelemento ::first-line aplica estilos à primeira linha de um elemento no nível do bloco. Observe que o comprimento da primeira linha depende de 
+									</p>
+									<p>O ::first-letter CSS pseudo-elemento que seleciona a primeira letra da primeira linha de um bloco, se nçao for procedido por qual outro conteúdo (como ...
+										</p>
+										<div>html css java </div><br>
+										
+										<h2>codigo<br>
+										
+										p::first-letter{
+	font-size:40px;
+	color:yellow;
+}<br>
+p::first-line{
+	background:#f0f;
+}<br>
+::selection{
+	color:purple;
+	background:pink;
+}
+										</h2>
+				<br>
+				
+				<h1>trasicao</h1><br>
+		<p class="m1">
+		
+As transições CSS fornecem uma maneira de controlar a velocidade da animação ao alterar as propriedades CSS . Em vez de fazer com que as alterações de propriedade entrem em vigor imediatamente, você pode fazer com que as alterações em uma propriedade ocorram durante um período de tempo
+		</p>
+				
+			<br>
+			<h2>codigo<br>
+			.m1{
+	width:300px;
+	height:250px;
+	border:1px solid #000;
+	padding:10px;
+	text-align:justify;
+	transition:width 2s ,height 2s;
+	
+}<br>
+.m1  p:hover{
+	width:500px;
+	height:120px;
+	background-color:#f00;
+	color:#fff;
+}
+			</h2>
+			<br>
+			
+			<h2>code 2<br>
+				p{
+	width:300px;
+	height:250px;
+	border:1px solid #000;
+	padding:10px;
+	text-align:justify;
+	transition:background-color 2s, color 2s transform 2s;
+	transition-timing-function:leinear;
+	transition-delay:0s;}
+}<br>
+p :hover{
+	width:500px;
+	height:120px;
+	background-color:#f00;
+	color:#fff;
+	transform:rotate(360deg);}
+				</h2><br>
+				<h1>animation</h1><br>
+	
+	<p class="m2">
+A propriedade CSS abreviada de animação aplica uma animação entre estilos . É uma abreviatura para nome da animação, duração da animação, função de tempo da animação, atraso da animação, contagem da iteração da animação, direção da animação, modo de preenchimento da animação e estado de reprodução da animação
+		</p>
+		<br>
+		<h2>codigo<br>
+		.m2 {
+	width:600px;
+	height:600px;
+	border:1px solid #fff;
+	border-radius:10px;
+	padding:10px;
+	text-align:justify;
+	overflow:auto;
+	position:relative;
+	animation-name:anima1;
+	animation-duration:2 s;
+	<br>
+}
+@keyframes anima1{
+	from(left:500px)
+	to (left:0px)
+}<br>
+}
+@keyframes anima1{
+	from(left:0px)
+	to (left:50px)
+}<br>
+@keyframes anima2{
+	from (background-color:#fff)
+	to (background-color:#f00)
+}
+		</h2><br>
+		<h2>
+		
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}<br>
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}<br>
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+<br>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}<br>
+
+	@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}<br>
+	div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}<br>
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+		</h2><br>
+		<p class=".n1"> começar a criar as colunas, vamos definir a largura das divs #conteudo-1 e #conteudo-2 e flutuá-las em direções opostas, ou seja, uma para esquerda e outra para a direita.</p><br>
+		<p class=".n1"> começar a criar as colunas, vamos definir a largura das divs #conteudo-1 e #conteudo-2 e flutuá-las em direções opostas, ou seja, uma para esquerda e outra para a direita.
+		trecho das três últimas linhas do CSS acima serve para definir o tamanho das colunas: Ex.: -webkit-column-width: 100px; -moz-column-width: 100px; column-width: 100px. Adicione o texto a ser dividido em colunas no trecho em laranja da segunda tabel	</p><br>
+		<br>
+<h2>codigo-<br>
+		n1 ,p{
+	position:relative;
+	left:0px;
+	top:0px;
+	width:800px;
+	height:500px;border:1px solid #000;
+	border-radius:10px;
+	padding:10px;
+	text-align:justify;
+	columns:2;
+	column-gap:50px;
+	column-rule:1px outset #f00;
+}
+		</h2>	<br>
+<div class="n3"><img class="n4" src="img/ca.jpg"> </div>
+
+			<p class="n2">Como faço para redimensionar uma imagem usando CSS?
+A propriedade max-width em CSS é usada para criar a propriedade de redimensionamento da imagem. A propriedade resize não funcionará se a largura e altura da imagem estiverem definidas no HTML. A largura também pode ser usada em vez da largura máxima, se desejado. A chave é usar height: auto para substituir qualquer atributo height = ”…” já presente na imagem.30 de julho de 2021
+				</p><br>
+				<h2>codigo-<br>
+				}
+.n3 ,div{
+	width:300px;
+	height:200px;
+	border:3px solid red;
+	border-radius:10px;
+	padding:10px;
+	resize:both;
+	overflow:hidden;
+	float:left;
+	
+}<br>
+.n4 ,img{
+	width:100%;
+	height:100%;
+	
+}<br>
+
+.n3 ,div:hover{
+	border:3px solid #000;
+	
+}
+					</h2><br>
+					<h2>}
+.n3 ,div{
+	width:300px;
+	height:200px;
+	border:3px solid red;
+	border-radius:10px;
+	padding:10px;
+	resize:both;
+	overflow:hidden;
+	float:left;
+	
+}<br>
+.n4 ,img{
+	width:100%;
+	height:100%;
+	
+}<br>
+
+.n3 ,div:hover{
+	border:3px solid #000;
+	
+}
+							</h2><br>
+							<div class="v1">css html java</div>
+		
+	<div class="v2">css html java</div>
+	<br>
+	<img class="i1" src="img/jj.jpg">
+	<h2>codigo filtro-<br>.i1 ,img{
+	filter:sepia(70% ) brightness(50%) saturate(80%) drop-shadow(5px 5px 5px #f0f) blur(1px);
+} </h2><br>
+<h1>Um layout responsivo é um site que teve seu código [html, php, java, css, python, por exemplo] alterado. Assim, suas páginas se adaptam em qualquer formato de tela sem que aconteça aquela “desconfiguração”. Ou seja, o usuário [leitor, público] não terá qualquer prejuízo na leitura das informações </h1><br>
+		<h2>codigo-<br>
+		<span style="color:red;">##defini modelo</span><br>
+			@media screen and (max-width400px) and (orientation:portrait){ 
+body{
+background:#ff0
+}
+}<br>
+<span style="color:red;">requisitos</span><br>
+@media screen and (max-width:600px) and (orientation:landscape)<br>
+<span style="color:green;">argumentos</span><br>
+{
+body{
+background:#00f;}
+}<br>
+
+	img{
+	width:500px;
+	}<br>
+	nav{
+	width:200px;
+	float:left;}
+	nav ul{
+	margin:0;
+	padding:o;
+	}<br>
+	nav li{
+	background-color:#d55;
+	color:#fff;
+	border:#ddd solid 1px;
+	border-radius:4px;
+	list-style-type:none;
+	margin:4px;
+	padding:2px;
+	
+	}<br>
+	article{
+	margin-left:216px;}<br>
+	<br>
+	<span style="color:red;">##resolucao do mini aparelho</span><br>
+	@media screen and (min-width:0px) and (max-width:500px){ 
+		nav{
+		width:100%;}
+		article{
+		margin-left:4px;
+		}
+		article p{
+		text-align:justify;}
+		nav li{
+		font-size:25px;}
+	}<br>
+	<span style="color:red;">##tablet</span><br>
+	@media and (min-height:500px) and (max-height:800px)<br>
+	
+	{
+	nav li{
+	font-size:25px;}
+	article{
+	float:left;}
+	
+	}</h2><br>
+	<strong><a href="css/css/lay.html">layaout link</a></strong><br>
+						
+						
+						
+						<h1>flex-box</h1>
+	<h2>codigo-<br>
+		.item{
+			margin:5px;
+			padding:5px;
+			background:#447;
+			text-align:center;
+			font-size:1em;
+			color:#fff;
+			}<br>
+			.containe{
+			max-width:500px;
+			margin:0 auto;
+			border:1px solid #000;
+			}<br>
+				body{
+				font-family:arial;
+				color:#000;
+				}<br>
+				.flex{
+				display:flex;}
+				.horizontal{flex-direction:row;}
+				.verical{<br>
+				flex-direction:column;}
+				.quebra{
+				flax-wrap:wrap;
+				}<br>
+				.fluxo-horizontal-quebra=flex-flow{
+				flex-direction:row;
+				flax-wrap:wrap
+				flex-flow:row wrap;}<br>
+				.flexgrow1{
+				flex-grow:1;
+				.baseflex{<br>
+				flex-basis:2;}
+				.orde{<br>
+				order:2;}
+				.reduzir{
+				flex-shrink:1;}<br>
+				.unicoalinhamento{
+				align-self:flex-start;
+				
+				
+				}
+		
+		</h2><br>
+	
+</body>
+		</html>
