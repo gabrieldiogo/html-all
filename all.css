@@ -1,0 +1,202 @@
+
+															
+															
+
+h1 {color:blue;font-size:45px;
+font-family:arial,verdana;
+letter-spacing:15px;
+text-decoration:underline/*underline,overline,line-trough*/;
+text-align:center;
+font-style:italic;
+text-transform:uppecase;}
+
+p{font-size:25px;
+font-family:verdana;
+letter-spacing:1px;
+text-decoration:line-trough;
+text-align:center;
+text-indent:10px;
+padding-left:20px;
+padding-right:20px;
+}
+#divv{color: green;background-color: ligtgray;
+text-align:center;padding:10px;margin :10px; }
+#a3{color: blue;text-align:left;}
+#span{color: orangered;font-weight: bid;}
+
+
+a:link { color: blue;font-family: sans-serif;text-decoration: none;}
+a:visited { color: green;}
+a:houver { text-decoration: underline;
+background-color: red;}
+a:active { background-color: orangered;}
+
+#ddl { text-align:left;padding:10px;margin:10px; font-size:25px}
+
+#ddt{ color: green;background-color: ligtgray;
+text-align:center;padding:100px;margin:25px;font-size:20px; }
+
+#ddd{ background-color: ligtgray;font-size :65px;
+text-align:left;padding:10px;margin :10px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+                   
+
+em { color: blue;}
+fieldset { border: 2px brown solid; border-radius: 10px ; width: 40% ;}
+ol { color: green; background-color: ligtgray;
+text-align:left;padding:10px;margin:10px font-size 25px; }
+
+marquee{font-size:50px;color:red;
+}
+
+
+body{margin:auto;
+width:1050px;
+background-color:#ddd;
+padding:0px;
+background:url(img/fu/fu.jpg) repeat-y;
+background-attachment:fixed;
+}
+
+#menu ul{
+list-style:none;
+padding:0px;
+margin:0px;
+background:linear-gradient(to bottom, #ddd,#667);
+}
+#menu li{
+height:37px;
+display:table-cell;
+text-align:center;
+vertical-align:middle;
+width:100px;
+border-right:1px solid #062; 
+}
+#menu ul,li,a{
+text-decoration:none;
+font-size:30px;
+color:blue;
+
+
+}
+          	
+#baner{
+	width:1970px;
+	
+}
+#baner{
+	top:0px;
+	float:left;
+	
+	margin-left: auto;
+	margin-right: auto
+}
+#lateral{
+	float:right;
+	background:#ddd;
+	width:200px;
+	border-radius:10px;
+	padding:5px;
+	
+	
+}
+#lateral h1{
+	font-size:15px;
+	text-align:center;
+	border-border-bottom:#000 solid:1px;
+	margin-top:-5px;
+}
+#lateral h2{
+	font-size:15px;
+	
+}
+#lateral p {
+text-align:center;
+color:purple;
+	
+}
+
+
+
+#main h2{
+	font-size:30px;
+	boder-bottom:#000 solid 1px;
+}
+#main h1{
+	font-size:70px;
+	
+}
+#main p{
+text-align:center;
+font-size:20px;
+}
+footer{
+	color:#888;
+	border:#000 solid 10px;
+}
+footer p{
+	display:inline-block;
+	width:216px;
+	text-align:center;
+	color:purple;
+}
+
+
+		details{
+	margin-top:30px;
+	cursor:pointer;
+}
+details p{
+	font-size:20px;
+	
+}
+
+summary{
+	height:20px;
+	background:linear-gradient(to bottom,green, #999);
+	font:15pt arial;
+	font-weight:bold;
+	padding:10px 0px 0px 10px;
+}
+details[open] summary{
+	color:blue;
+	background:linear-gradient(to bottom, red,yellow, green);
+	
+}
+details p{
+	text-align:center;
+	background-color:yellow;
+	color:purple;
+}
+		
+			#contato label{
+	font-size:15px;
+	font-weight:bold;
+	font-style:italic;
+	font-family:arial;
+	color:purple;
+	display:block;
+	margin-top:20px;
+	
+}
+#contato input[type="submit"] ,#contato input[type="reset"]{
+	border:0px; width:120px; height:50px; background:#060;
+	border-radius:10px; cursor:pointer;
+	color:red;
+}
+.ff p {
+	text-color:purple;
+}
+ h1{
+	 font-size:50px;
+	 background:linear-gradient(to left ,red 30% ,yellow ,green );
+	 -webkit-text-fill-color:transparent;
+	 -webkit-background-clip:text;
+ }
+		marquee {
+	 font-size:50pt;
+	 color:green;
+	 text-shadow:5px 5px 10px yellow,10px 10px 5px red  ;
+	
