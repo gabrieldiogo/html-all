@@ -12,6 +12,10 @@ text-align:left;
 }
 h2{
 color:yellow;
+text-align:left;
+}
+h1{
+font-size:30px;
 }
 
 #menu ul{
@@ -197,6 +201,53 @@ A instrução switch-case é uma alternativa à instrução if-elseif-else, que 
 		</h1>
 		<h1>switch case</h1>
 		<h2>
+		$opc =4;<br>
+switch($opc){<br>
+	case 1:<br>
+	echo"carro";<br>
+	break;<br>
+	case 2:<br>
+	echo"bike";<br>
+	break;<br>
+	case 3:<br>
+	echo"lancha";<br>
+	default:<br>
+	echo"nao";<br>
+}
+	<hr>
+<h2>
+$opc =3;<br>
+switch($opc){<br>
+	case 1:<br>
+	echo"carro";<br>
+	break;<br>
+	case 2:<br>
+	echo "bike";<br>
+	break;<br>
+	case 3:<br>
+	echo"lancha";<br>
+	default:<br>
+	echo"nao";<br>
+	break;<br>
+}
+
+switch ($opc){<br>
+	case ($opc <= 3 and $opc > 0);<br>
+		echo"trasp ter";<br>
+		break;<br>
+		case 4:<br>
+		echo "mara";<br>
+		break;<br>
+		
+	}
+
+</h2>	
+		
+		</h2>
+		
+		
+		
+		<h2>
 		$opc=1;<br>
 		
 		switch($opc){<br>
@@ -231,6 +282,34 @@ A instrução switch-case é uma alternativa à instrução if-elseif-else, que 
 		}
 		
 		</h2>
+		<h2>
+		
+		$nota1 =50;<br>
+if($nota1 >= 60){<br>
+	echo"a";<br>
+}else if($nota1>= 50){<br>
+	echo"rec";<br>
+}else{<br>
+	echo"rep";<br>
+}
+		
+		</h2>
+		<h2>
+		$nota1 =50;<br>
+if($nota1 >= 60){<br>
+	echo"a";<br>
+}else if($nota1>= 50){<br>
+	echo"rec";<br>
+}else{<br>
+	echo"rep";<br>
+}
+if(($nota1 >= 40)&($nota1 <= 60)){<br>
+	echo"sele";<br>
+	
+}else{<br>
+	echo"fora";<br>
+}<br>
+		</h2>
 		<hr>
 		
 		<h1>
@@ -239,6 +318,29 @@ A instrução switch-case é uma alternativa à instrução if-elseif-else, que 
 O loop do ... while - Faz um loop em um bloco de código uma vez e, em seguida, repete o loop enquanto a condição especificada for verdadeira.
 		</h1>
 		<h1>loop while</h1>
+		<h2>
+		$i =0;<br>
+$tam =10;<br>
+$vet =array($tam);<br>
+while($i < 10 ){<br>
+	echo"valor dei $i";<br>
+	$i++;<br>
+	
+}
+echo"<hr>";<br>
+$i=0;<br>
+while($i < $tam){<br>
+	$vet[$i]=$i;<br>
+	$i++;<br>
+	
+}
+$i=0;<br>
+while($i < $tam){<br>
+	echo "$vet[$i]";<br>
+	$i++;<br>
+}
+		</h2>
+		</hr>
 		<h2>
 		$i=0;<br>
 		$tam=10;<br>
@@ -323,11 +425,45 @@ A ideia básica do for é criar um laço de repetição, onde o mesmo recebe uma
 		}
 		
 		</h2>
+		<h1>forr()</h1>
+		<h2>
+		
+		$i=0;<br>
+$tam =5;<br>
+$vet=array($tam);<br>
+for($i=0; $i < $tam; $i++){<br>
+	echo"$i";<br>
+}
+echo"<hr>";<br>
+for($i=0; $i <$tam; $i++){<br>
+	$vet[$i]="g";<br>
+}
+for($i=0; $i < $tam; $i++){<br>
+	echo"$vet[$i]";<br>
+}
+		
+		</h2>
 		<h1>
 		Como o loop foreach funciona em PHP?
 O loop foreach é usado principalmente para percorrer os valores de uma matriz . Ele faz um loop no array e cada valor do elemento atual do array é atribuído a $ value, e o ponteiro do array é avançado em um para ir para o próximo elemento no array. Sintaxe: ... php foreach (array as $ value) { código a ser executado; }
 		</h1>
+		<h2>
 		
+		$tras=array("carro","moto","bike","bus");<br>
+foreach($tras as $vei){<br>
+	echo $vei;<br>
+	if($vei == "bike"){<br>
+		break;<br>
+	}
+}
+echo"<hr>";<br>
+foreach($tras as $vei){<br>
+	if($vei == "bus"){<br>
+	echo"esta";<br>
+
+}}
+		
+		</h2><hr>
 		
 		<h2>
 		$trans=array("carro","moto","bike","aviao");<br>
@@ -402,13 +538,138 @@ A sintaxe do comando do break é esta: break; No código abaixo encerramos a exe
 		
 		
 		</h2>
+		<h1>breakk</h1>
+		<h2>
+		$vet=array("ram","tec","hd","sair","pc");<br>
+$tam=count($vet);<br>
+$i=0;<br>
+
+$i=0;<br>
+while($i < $tam ){<br>
+	echo"$vet[$i].<br>";<br>
+	$i++;<br>
+	if($vet[$i] == "sair"){<br>
+		break;<br>
+	}<br>
+}
+echo"<hr>";<br>
+for($i=0; $i < $tam; $i++){<br>
+	echo"$vet[$i]";<br>
+	if($vet[$i] == "sair"){<br>
+		break;<br>
+	}<br>
+}<br>
+
+echo"<hr>";<br>
+foreach($vet as $pc){<br>
+	echo $pc;<br>
+	if($pc == "sair"){<br>
+		break;<br>
+	}
+}
+
+echo"<hr>";<br>
+$i=0;<br>
+do{<br>
+	echo$vet[$i];<br>
+	$i++;<br>
+	if($vet[$i] == "sair"){<br>
+		break;<br>
+	}	}<br>
+	while($i < $tam);<br>
+		<hr>
+		
+$valo=array(1,3,5,7,9,8);<br>
+function media($val){<br>
+	$tam=count($val);<br>
+	$soma=0;<br>
+	for($i=0; $i <$tam; $i++){<br>
+		$soma+=$val[$i];<br>
+	}
+	return $soma/$tam;<br>
+}
+$med = media($valo);<br>
+echo $med;<br>
+		</h2>
+		<hr>
+		<h1>fatureal (recusirvas)</h1>
+		
+		
+		<h2>
+		
+function aula ($num){<br>
+	if($num!=0){<br>
+		echo $num;<br>
+		aula($num-1);<br>
+	}<br>
+}
+aula(10);<br>
+echo"<hr>";<br>
+function fat ($num){<br>
+	if($num < 0){<br>
+		return-1;<br>
+	}
+	if($num <= 1){<br>
+		return 1;<br>
+	}
+	return $num*fat($num-1);<br>
+}
+echo fat(7);<br>
+		
+		</h2>
+		<hr>
+		<h1>data</h1>
+		<h2>
+		$meses =array("j","f","m","a","mai","jun","jul","ag","set","ou","nov","dez");<br>
+$dia = date ("d");<br>
+$mes = date("m");<br>
+$ano = date("y");<br>
+$hora = date ("H");<br>
+$minuto =date("i");<br>
+$segundo =date("s");<br>
+
+echo $dia."/".$meses[$mes-1]."/".$ano;<br>
+echo"<hr>";<br>
+echo $hora.":".$minuto.":".$segundo;<br>
+		
+		
+		</h2>
+		<h1>sesion<h1/>
+		
+		<h2>
+		session_start();<br>
+$_SESSION['vnome']="biel";<br>
+$_SESSION['vtexo']="php";<br>
+
+unset($_SESSION['vtexo']);<br>
+echo $_SESSION['vnome'];<br>
+		
+		</h2>
 		<h1>
 		
 Resultado de imagem para função php
 Função em PHP é um trecho de código que pode ser chamado (invocado) de qualquer parte do código para executar uma tarefa qualquer e retornar algum valor. Ou seja, você pode chamar quantas vezes forem necessárias a função.4 de dez. de 2012
 		
 		</h1>
+		<h2>
+		function soma($n1, $n2){<br>
+	$res=$n1 + $n2;<br>
+	echo $res;<br>
+	
+}<br>
+soma(3,7);<br>
+
+function soma2($n1,$n2){<br>
+	$res=$n1+$n2;<br>
+	return $res;<br>
+}
+$so=soma2(10,5);<br>
+echo $so;<br>
+
 		
+		
+		
+		</h2>
 		<h2>
 		$valores=array(1,3,5,7,9,12,6,15);<br>
 		function media($val){<br>
@@ -451,6 +712,393 @@ Recursividade é o mecanismo de programação no qual uma definição de funçã
 		aula($num =1);<br>
 		}}<br>
 		aula(10);
+		
+		</h2>
+		<h1>
+		O PHP Isset é um função nativa do PHP que serve para saber se uma variável está definida. Ela basicamente verifica a existência de uma variável, e assim, retorna um valor boleano (true se for verdadeiro, e false se for falso). Ou seja, caso uma variável não esteja definida, ela possui o valor nulo (null).
+		
+		</h1>
+		
+		<h2>
+		
+		$aula="";<br>
+		if(isset($aula)){<br>
+		echo"varivel aula existe nao definida";<br>
+		}else{<br>
+		echo"varivel nao definida";<br>
+		}
+		
+		
+		
+		</h2>
+		<section>
+		<h1>
+		Como pegar o valor da URL PHP?
+$url = substr($_SERVER["REQUEST_URI"], strpos($_SERVER["REQUEST_URI"], '/')+1); O resultado será o mesmo, independente de qual é o nome do diretório, desde que exista um.
+		
+		</h1>
+		<h2>
+		pg1.php<br><br>
+		$vtexto=$_get["tx"];<br>
+		$vnome=$_get["no"];<br>
+		$vcanal=$_get["no"];<br>
+		
+		<br>
+		
+		echo $vtexto;<br>
+		echo $vnome;<br>
+		echo $vcanal;
+		
+		</h2>
+		<h2>
+		$texto="curso de php";<br>
+		$nome="biel";<br>
+		$canal="biel gd";
+		echo"(a href="pg1.php?tx=".urlencode($texto)."&no=".urlencode($nome)."&no="urlencode($canal)"target=_self)link(/a)";<br>
+		
+		
+		
+		</h2>
+		</section>
+		<h1>
+		Sessões são uma forma simples de armazenar dados para usuários individuais usando um ID de sessão único. Sessões podem ser usadas para persistir informações entre requisições de páginas.
+		
+		</h1>
+		<h1>
+		
+		O que é uma classe PHP?
+A classe é uma estrutura ou esqueleto que abstrai um conjunto de objetos contendo características similares. Uma determinada classe define o comportamento de seus objetos usando métodos e modificando seus estados como os atributos.
+		</h1>
+		<h2>
+		class carro{<br>
+		var $tipo;<br>
+		var $velmax;<br>
+		var $nome;<br>
+		var $liga;<br>
+		function carro($tp,no){
+		<br>
+		$this->tipo=$tp;<br>
+		$this->liga=false;<br>
+		$this->nome=$no<br>
+		 if($tp==1){<br>
+		 $this->velmax=160;<br>
+		 }else if ($tp==2){<br>
+		 $this ->velmax=100;<br>
+		 }else{<br>
+		 $this->velmax=100;
+		 <br>
+		 
+		 
+		 
+		 }}<br>
+		 function liga(){<br>
+		 $this ->liga=true;<br>
+		 
+		}<br>
+		function desliga(){<br>
+		$this ->liga=false;}<br>
+		function velocida ($v1){<br>
+		if ($v1 > $this=vmax){<br>
+		}else{<br>
+		$this -> vel=$v1;}}<br>
+		<br>
+		function id (){<br>
+		echo"nome do carro: ".$this->nome";<br>
+		echo"tipo:".$this->tipo";<br>
+		echo"velocidade:".$this->vmax";<br>
+		
+		}}}<br>
+		$carro1=new carro(2,"rapid");<br>
+		$carro1->id();<br>
+		$caroo2=new carro(3,"caregado");<br>
+		$caroo3=new carro(1,"pasic")<br>
+		
+		</h2><hr>
+		<h2>
+		
+		function soma( ) {<br>
+	$p = func_get_args( ) ;<br>
+	$t = func_num_args( ) ;<br>
+	$s = 0;<br>
+	for ($i=0; $i < $t; $i++){<br>
+		$s +=  $p[$i];<br>
+	}
+return $s;<br>
+}
+$y = soma(3, 5, 2, 5, 7 ,4 ,1330);<br>
+echo "a soma dos valorea e  $y";<br>
+		
+		
+		</h2><hr>
+		<h2>
+		
+		function teste ($x){<br>
+	$x += 2;<br>
+	echo "o valor de x e $x";<br>
+	
+}
+$a =3;<br>
+teste($a);<br>
+echo"o valor e $a";<br>
+		
+		
+		</h2><hr>
+		
+		
+		<h1>manipula arrays</h1>
+		<h2>
+		
+		$m = array(<br>
+array(6, 4),<br>
+array(4, 9),<br>
+array(3, 2));<br>
+$m [0][4] = $m [2] [0];<br>
+print_r($m);<br>
+		
+		</h2><hr>
+		<h1>class</h1>
+		<h2>
+		
+		class carro{<br>
+	var $tipo;<br>
+	var $velmax;<br>
+	var $liga;<br>
+	var $vel;<br>
+	function carro($tp,$no){<br>
+		$this->tipo=$tp;<br>
+		$this -> liga=false;<br>
+		$this->nome=$no;<br>
+		$this->vel=0;<br>
+		if($tp==1){<br>
+			$this->velmax=160;<br>
+		}else if($tp==2){<br>
+			$this->velmax=300;<br>
+		}else{<br>
+			$this->velmax=100;<br>
+		}<br>
+		
+	}
+	function liga(){<br>
+		$this->liga=true;<br>
+	}
+	function desliga(){<br>
+		$this->liga=false;<br>
+	}
+	function velocidade($vl){<br>
+		if($vl > $this->velmax){<br>
+			$this->vel=$this->velmax;<br>
+		}else{<br>
+			$this->vel=$vl;<br>
+		}<br>
+	}
+	
+	function id(){<br>
+		echo "nome do carro".$this->nome;<br>
+		echo"<br>";<br>
+		echo "tipo de carro".$this->tipo;<br>
+		echo"<br>";<br>
+		echo"vel max".$this->velmax;<br>
+		echo"vel max".$this->vel;<br>
+		if($this->liga){<br>
+			echo "esta ligado";<br>
+		}else{<br>
+			echo"desli";<br>
+		}
+	}
+}
+$carro1=new carro(2,"rapid");<br>
+
+$carro2 =new carro(3,"util");<br>
+$carro3 =new carro(2,"esport");<br>
+$carro1->liga();<br>
+$carro3->velocidade(300);<br>
+<br>
+
+$carro2 ->id();<br>
+$carro1->id();<br>
+		
+		<hr></h2>
+		<h1>class hereca</h1>
+		<h2>
+		class aula{<br>
+	
+private	 var $var1="bondia";<br>
+protected	var $var2="biel";<br>
+private	var $var3="diogo";<br>
+
+function escreve(){<br>
+	echo"medod da class aula";<br>
+	echo $this->var1;<br>
+	echo"<br>";<br>
+	echo $this->var2;<br>
+	echo"<br>";
+	echo $this->var3;<br>
+
+}}<br>
+	class canal extends aula{<br>
+	var $vc1="curso php";<br>
+var $vc2="gg";<br>
+
+function escreve2(){<br>
+	echo "medtodo do canal";<br>
+	echo"<br>";
+	echo $this->vc1;<br>
+	echo"<br>";
+	echo $this->vc2;<br>
+}	<br>
+	
+}
+$aulaobj=new aula();<br>
+$canal=new canal();<br>
+
+
+$aulaobj->escreve();<br>
+echo"<hr>";
+$aulaobj->escreve();<br>
+$canalobj->escreve2();<br>
+		
+		</h2>
+		
+		
+		<hr><h1>class (abstratc)</h1>
+		<h2>
+		abstract class carrobase{<br>
+	public $potencia;<br>
+	public $velmax;<br>
+	public $portas;<br>
+	public $ligado=false;<br>
+	
+	abstract function texte();<br>
+	
+	function liga (){<br>
+		$this->ligado=true;<br>
+	}<br>
+	function desliga(){<br>
+		$this->ligado=false;<br>
+	function status(){<br>
+		echo"<hr>";<br>
+		echo"pot",$this->potencia;<br>
+		echo"<br>";<br>
+		echo"velomax".$this->velmax;<br>
+		echo"<br>";<br>
+		echo"portas".$this->portas;<br>
+		echo"<br>";
+		
+		if($this ->ligado){<br>
+			echo"lg";<br>
+			
+		}else{<br>
+			echo"dl";<br>
+		}
+	}
+}
+class carro extends carrobase{<br>
+	function carro($pt,$vm,$po){<br>
+		$this->potencia=$pt;<br>
+		$this->velmax=$vm;<br>
+		$this->portas=$po;<br>
+		$this->status();<br>
+		
+	}
+}
+$carro1=new carro(200,57,5);<br>
+$carro1->liga();<br>
+$carro1->status();<br>
+
+$carro2=new carro(100,7,1);<br>
+$carro2->liga();<br>
+$carro2->status();<br>
+		
+		
+		</h2><hr>
+		<h1>class (interfaces)</h1>
+		<h2>
+		
+		interface carropadrao{<br>
+	function liga();<br>
+	function desliga();<br>
+	function status();<br>
+	function freia();<br>
+}
+interface carroguerra{<br>
+	function atiracanhao();<br>
+	function atirametralhadora();<br>
+}
+abstract class carrobase implements carropadrao, carroguerra{<br>
+	public $potencia;<br>
+	public $velmax;<br>
+	public $ligado=false;<br><br>
+	
+	function liga(){<br>
+		$this ->ligado=true;<br>
+	}
+	function desliga(){<br>
+		$this->ligado=false;<br>
+	}
+	function status(){<br>
+		echo"<hr>";<br>
+		echo"pot".$this->potencia;<br>
+		echo"<br>";<br>
+		echo"velo".$this->velmax;<br>
+		echo"<br>";<br>
+		echo"<br>";<br>
+		if($this->ligado){<br>
+			echo"lg";<br>
+		}else{<br>
+		echo"dl";<br>
+		}
+		echo"<hr>";<br>
+	}
+	function acelera(){}<br>
+	function freia(){}<br>
+	function atiracanhao(){}<br>}
+}
+class carro extends carrobase{<br>
+	function carro($pt,$vm){<br>
+	$this->potencia=$pt;<br>
+	$this->velmax=$vm;<br><br>
+	
+	$this->status();<br>
+	
+}
+
+}<br>
+$carro1=new carro(200,39);<br>
+$carro1->liga();<br>
+$carro1->status();<br>
+		
+		
+		</h2><hr>
+		<h1>class(stact)</h1>
+		<h2>
+		
+		class carro{<br>
+	public $cor;<br>
+	public static $vel;<br>
+	
+	function carro($cr,$vl){<br>
+		$this->cor=$cr;<br>
+		self :: $vel=0;<br>
+	}
+	function mudavel($v1){<br>
+		self :: $vel=$v1;<br>
+	}
+	
+	function status(){<br>
+		echo"<hr>";<br>
+		echo $this->cor;<br>
+		echo self :: $vel;<br>
+		echo"<hr>";<br>
+	}
+}
+$car1=new carro("red");<br>
+
+$car2=new carro("yelow");<br>
+
+
+$car1->status();<br>
+$car2->status();<br>
+$car1->mudavel(300);<br>
 		
 		</h2>
 </body>
