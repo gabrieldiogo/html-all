@@ -35,7 +35,7 @@ background-size: 100%;
 
 }
 h1{
-	color: ;
+	color: purple;
 	font-size: 30px;
 }
 h2{
@@ -601,11 +601,32 @@ num=0;<br>
 
 </section>
 
+<h1>
+Como usar getElementsByClassName?
+Quando invocado no objeto document, o documento é examinado por completo, incluindo o nó raiz. Você também pode invocar getElementsByClassName() em qualquer elemento; isso retornaria somente elementos que são descendentes do nó raiz especificado com o nome da classe.
 
+
+
+</h1>
+<h2>
+
+  var p1=document.getElementsByTagName('p')[1];<br>
+var div= document.getElementById('msg')<br>
+
+
+<br>
+     document.write('estaescrito asim:'+p1.innerText);<br>
+div.style.background ='green';<br>
+div.innerText='estou aqui';<br>
+var d=document.querySelector('div.msg');<br>
+d.innerText='okokok';<br>
+
+
+</h2>
 
 		
 
-						<script>
+						
 					
 var num;
 num=0;
@@ -615,6 +636,694 @@ num=0;
 	}
 
 
-						</script>
-				</body>
+			
+
+
+<h1>
+
+
+Quando usar Let JavaScript?
+let permite que você declare variáveis limitando seu escopo no bloco, instrução, ou em uma expressão na qual ela é usada. Isso é inverso da keyword var , que define uma variável globalmente ou no escopo inteiro de uma função, independentemente do escopo de bloco.
+
+
+</h1>	
+
+
+
+<h2>
+
+let num=10
+console.log(num)
+if (num==10) {
+   let num=5;
+    console.log(num)
+    
+}
+console.log(num)
+
+
+</h2>	
+
+
+<h1>
+
+A cláusula finally é executada após a excecução do bloco try e da(s) cláusula(s) catch porém antes das declarações seguintes ao try . Ela sempre é executada, independente se uma exceção for lançada ou capturada. Você pode aninhar uma ou mais declarações try .
+
+</h1>	
+
+
+<h2>
+
+  try {
+           num=prompt("digite")
+           if(num>10){
+           throw new Error("invalido")
+           }
+           document.write("valor"+num)
+       } catch (error) {
+       document.write("ero")  
+        //console.log("erro")  
+       }finally{
+           document.write("fim")
+       }
+
+</h2>
+
+
+
+
+<h1>
+O que faz o getElementById?
+getElementById , como o nome já diz, é uma função do JavaScript que serve para retornar um elemento do DOM que é identificado por um ID específico.
+
+</h1>
+	
+<h2>
+
+var tx=document.getElementById("txt")
+document.getElementById("txt").style.color="red";
+document.getElementById("txt").style.fontSize="50px"
+
+var cx=document.getElementById("caixa")
+
+
+cx.style.border="1px solid blue";
+cx.style.width="300px";
+cx.style.height="300px"
+cx.style.backgroundColor="red"
+
+
+
+
+
+
+
+</h2>	
+<h2>
+
+var g
+var cxt=  document.getElementById("cxtext").value=g=prompt('q')
+
+ cxt=  g
+
+ 
+
+
+var tx=  document.getElementById("txt").innerHTML="fff"
+
+document.getElementById("dv").innerHTML="neeo"
+
+</h2>
+
+<h1>
+getElementsByTagName<br>
+
+O que é getElementsByTagName?
+O getElementsByTagName() método devolve um conjunto de todos os elementos no documento com o nome de marca especificada, como um objecto NodeList. O objecto NodeList representa um conjunto de nodos. Os nódulos podem ser acedidos por números de índice. ... Dica: O ParameterValue "*" retorna todos os elementos no documento.
+
+
+</h1>
+<h2>
+
+
+var p= document.getElementsByTagName("p")
+
+for(var i=0; i<p.length; i++){
+p[i].style.color="red"
+}
+
+document.write(p[3].innerHTML)
+
+
+</h2>
+
+
+<h1>
+Para que serve o querySelectorAll?
+Document.querySelector()
+
+Retorna o primeiro elemento dentro do documento (usando ordenação em profundidade, pré-ordenada e transversal dos nós do documento) que corresponde ao grupo especificado de seletores.
+
+
+</h1>
+
+<h2>
+
+var ps=document.querySelectorAll(".tit");
+for(var i=0;i<ps.length; i++){
+    document.write(ps[i].innerHTML +"<br>")
+}
+
+
+
+</h2>
+
+<h1>
+
+O que é Form em JavaScript?
+No JavaScript utiliza-se um objecto, denominado form, para referenciar os elementos dos formulários, que são os tradicionalmente usados em HTML. Contudo, um documento pode conter várias forms, razão pela qual os objectos de tipo form se agrupam em arrays de forms.
+</h1>
+
+<h2>
+
+   var fm= document.forms[0].id;
+
+    var fm= document.forms.item(0).id
+var fm= document.forms.namedItem("curso1").innerHTML;
+
+fm=document.forms["curso1"].elements[0].value;
+
+document.write(document.getElementById("curso1").elements[0].value)
+
+
+var fm=document.forms[0];
+var el=fm.elements;
+
+
+
+for(var i=0;i<el.length-1;i++){
+
+el[0].style.backgroundColor="red"
+el[0].value="biel"
+}
+
+</h2>
+<h1>date</h1>
+
+<h2>
+
+ var dt=new Date();
+       var ndt=new Date();//ano,mes,hora,dia,minuto,segundos(1888,03-1,06,15,30,00)
+
+ ndt.setFullYear(dt.getFullYear());
+
+var diasem=ndt.getDay();
+       var dia=ndt.getDate();
+       var mes=ndt.getMonth();
+       var ano=ndt.getFullYear();
+
+       var horas=ndt.getHours();
+        var minutos=ndt.getMinutes();
+        var segundos=ndt.getSeconds();
+
+       var meses=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var semanas=new Array("Domingo","segundas","terça","quarta","quinta","sexta","Sabado");
+
+
+
+document.write(semanas[diasem]+"/"+dia+"/"+meses[mes]+"/"+ano +"<br>");
+document.write(horas+":"+minutos+":"+segundos);
+
+
+
+</h2>
+
+<h1>
+Para que serve o math?
+Math é o editor de fórmulas da suíte LibreOffice, que pode ser chamado em seus documentos de texto, planilhas, apresentações e desenhos, para que você possa inserir fórmulas matemáticas e científicas perfeitamente formatadas.
+</h1>
+
+<h2>
+var v=60
+
+for(var i=0;i<6;i++){
+
+    document.write(Math.round((Math.random()*v)+1)+"<br>")
+}
+
+</h2>
+<h1>
+Para que serve o function?
+Uma user defined function (função definida pelo usuário) é uma rotina, normalmente escrita com a linguagem T-SQL, que executa uma ação (como um cálculo complexo) e retorna o resultado dessa ação como um valor. O valor de retorno pode ser um valor escalar (único) ou uma tabela.16 de out. de 2018
+</h1>
+
+<h2>
+
+  var numeros=new Array(10,2,3,4,5,60,7,8,9,10)
+function media(nums) {
+    var tam=nums.length;
+    var soma=0;
+    for(var i=0;i<tam;i++){
+        soma+=nums[i]
+    }
+    return Math.round(soma/tam)
+}
+document.write(media(numeros))
+
+
+</h2>
+<h1>eventos<br>
+onBlur	remove o foco do elemento
+onChange	muda o valor do elemento
+onClick	o elemento é clicado pelo usuário
+onFocus	o elemento é focado
+onKeyPress	o usuário pressiona uma tecla sobre o elemento
+onLoad	carrega o elemento por completo
+onMouseOver	define ação quando o usuário passa o mouse sobre o elemento
+onMouseOut	define ação quando o usuário retira o mouse sobre o elemento
+onSubmit	define ação ao enviar um formulário
+
+</h1>
+<h2>
+function mcor(obj,cor) {
+    obj.style.backgroundColor = cor;
+}
+  function mudapos(obj){
+      obj.style.position = "absolute";
+      obj.style.left = Math.random()*500+"px";
+      obj.style.top = Math.random()*500+"px";
+  } 
+  function ola(){
+      var data=new Date();
+      var hora=data.getHours();
+      var txt="";
+      if(hora<12){
+          txt="bon dia"
+      }else if(hora<18){
+          txt="boa tarde"
+  } else {
+          txt="boa noite"
+  }
+        document.getElementById("dv1").innerHTML=txt;
+  
+  }
+
+
+</h2>
+<h1>
+O que é o addEventListener?
+addEventListener é a maneira de registrar uma espera de evento como especificada no W3C DOM. Seus benefícios são os seguintes: Permite mais de um manipulador por evento. ... Funciona em qualquer elemento DOM, não só para elementos HTML.
+
+</h1>
+<h2>
+
+   function msg(){
+            alert("Hello");
+        }
+        function cor(obj,cor){
+            
+            obj.style.backgroundColor=cor;
+        }
+      
+
+        function ev(){
+       var obj= document.getElementById("dv1");
+         obj.addEventListener("click",msg);
+          obj.addEventListener("mouseover",function(event){
+              cor(obj,"#fdd");
+          });
+            obj.addEventListener("mouseout",function(event){
+                cor(obj,"#bbb");
+            });
+    }
+        window.addEventlistener("load",addEventos)
+       
+
+</h2>
+
+
+<h1>
+O que é addEventListener Keydown?
+Quando você coloca o cursor de texto em uma caixa <input>, ele está ouvindo o teclado. Quando você pressiona a tecla ↓, sua página da web rola para baixo. ... addEventListener ('keydown', fn); // Ouvindo o documento de evento de rolagem. addEventListener ('scroll', fn); // Ouvir quando a janela do navegador é redimensionada.
+
+</h1>
+<h2>
+  13 enter -32 esquerda -38cima -39direita -40 baixo<br>
+     
+    var px=0
+    var py=0
+    <br>
+    document.addEventListener("keydown",function(event){
+                var obj=document.getElementById("dv1");
+                var tecla=event.keyCode;
+                if(tecla ==37){
+                    px-=10;
+                    obj.style.left=px+"px";
+    
+                }else if(tecla ==38){
+                    py-=10;
+                    obj.style.top=py+"px";
+    
+                }else if(tecla==39){
+                    px+=10;
+                    obj.style.left=px+"px";
+                }else if(tecla==40){
+                    py+=10;
+                    obj.style.top=py+"px";
+                }
+            })
+
+
+<hr>
+
+var px=0
+var py=0
+<br>
+function move(){
+
+<br>    
+32 esquerda -38cima -39direita -40 baixo<br>
+ 
+
+
+
+            var obj=document.getElementById("dv1");
+            var tecla=event.keyCode;
+            if(tecla ==37){
+                px-=10;
+                obj.style.left=px+"px";
+
+            }else if(tecla ==38){
+                py-=10;
+                obj.style.top=py+"px";
+
+            }else if(tecla==39){
+                px+=10;
+                obj.style.left=px+"px";
+            }else if(tecla==40){
+                py+=10;
+                obj.style.top=py+"px";
+            }else if(tecla==13){
+                alert("rmove");
+                document.removeEventListener("keydown",move);
+            }
+
+            }
+        
+
+        document.addEventListener("keydown",move)
+
+
+</h2>
+<h1>
+
+Qual a diferença entre setTimeout e setInterval?
+setTimeout() Executa um bloco específico uma vez depois de um determinado tempo. setInterval() Executa um bloco específico repetidamente com um intervalo fixo entre cada chamada.
+
+</h1>
+
+<h2>
+      function mudacor(){
+           var obj= document.getElementById("dv1")
+            var r=Math.floor(Math.random()*255);
+            var g=Math.floor(Math.random()*255);
+            var b=Math.floor(Math.random()*255);
+            obj.style.backgroundColor="rgb("+r+","+g+","+b+")";
+        }
+       // window.addEventListener("load",mudacor)
+        
+//var tmp= setTimeout(mudacor,3000)
+//var tmp=setInterval(mudacor,1000)
+    
+function iniciar(){
+    tmp=setInterval(mudacor,1000)
+}
+
+function parar(){
+    clearInterval(tmp)
+}
+function dev(){
+document.getElementById("bt1").addEventListener("click",iniciar)
+document.getElementById("bt2").addEventListener("click",parar)
+}
+window.addEventListener("load",dev)
+
+</h2>
+
+
+<h1>
+Relógio digital funcional
+
+</h1>
+ function releogio() {
+            var data = new Date();
+            var hor = data.getHours();
+            var min = data.getMinutes();
+            var seg = data.getSeconds();
+            if(hor <10){
+                hor = "0" + hor;
+            
+            }if(min <10){
+                min = "0" + min;
+            }
+            if(seg <10){
+                seg = "0" + seg;
+            }
+            var hora = hor + ":" + min + ":" + seg;
+            document.getElementById("rel").value=hora
+            
+        }
+        var tempo = setInterval(releogio, 1000);
+<h2>
+
+<h1>
+
+O que requestAnimationFrame faz em JavaScript?
+O método requestAnimationFrame () informa ao navegador que você deseja executar uma animação e solicita que o navegador chame uma função especificada para atualizar uma animação antes do próximo redesenho . O método recebe um retorno de chamada como um argumento a ser invocado antes do redesenho
+
+</h1>
+<h2>
+
+  var jog;
+    var vel;
+    var dx;
+    var dy;
+    var px;
+    var py;
+
+    var anima;
+    var estado ;
+<br>
+    function inicia(){<br>
+        vel = 2;
+        dx =1
+        dy =0
+        px = 0;
+        py = 0;<br>
+        estado=1 //1 movendo 0parado
+        jog = document.getElementById("jogado");
+        jog.addEventListener("click",para);
+        document.getElementById("in").addEventListener("click",move);
+        document.getElementById("pra").addEventListener("click",para);
+       <br>
+        
+        game();
+    }<br>
+
+    function para(){<br>
+        if(estado){<br>
+
+        
+        estado=0;<br>
+        jog.style.backgroundColor = "red";<br>
+        cancelAnimationFrame(anima);<br>
+<br>
+        }else{<br>
+            estado=1;<br>
+            jog.style.backgroundColor = "blue";<br>
+            anima=requestAnimationFrame(game);<br>
+        }
+    }<br>
+    function move(){<br>
+        if(!estado){<br>
+
+        
+        estado=1;<br>
+        jog.style.backgroundColor = "#bbb";<br>
+        anima=requestAnimationFrame(game);<br>
+        
+
+        }}<br>
+
+        function pr(){<br>
+        if(!estado){<br>
+
+        
+        estado=0;<br>
+        jog.style.backgroundColor = "#bbb";<br>
+        anima=cancelAnimationFrame(anima);<br>
+
+        }}<br>
+        
+
+        
+
+    function game(){<br>
+        px +=(dx*vel)<br>
+       //py =py (dy*vel)<br>
+        jog.style.left = px +"px";<br>
+        //jog.style.top = py +"px";<br>
+        if(px>800){<br>
+            dx = -1;<br>
+        }else if(px<0){<br>
+            dx = 1;<br>
+        }<br>
+       anima=  requestAnimationFrame(game);<br>
+    }<br>
+window.addEventListener("load",inicia)<br>
+
+</h2>
+<h1>recusividade</h1>
+
+<h2>
+
+ var obj = document.getElementById("quad");
+            var ang=0;
+            var anima
+           function gira(){ 
+               obj.style.transform = "rotate("+ang+"deg)";
+                ang++;
+                if(ang==360){
+                    ang=0;
+                }
+                anima=requestAnimationFrame(gira);
+        }
+
+        function iniciar(){
+            
+           anima= requestAnimationFrame(gira);
+
+        }
+        function parar(){
+            anima=cancelAnimationFrame(gira);
+        }
+           
+        addEventListener("click",iniciar);
+        addEventListener("click",parar);
+
+</h2>
+<h1>
+Uma das possibilidade de unir CSS e javascript é criar rotinas de formatação condicional, ou seja, formatar um elemento com um estilo visual dependendo de uma condição. Vamos começar com um código simples, formatar um valor de vermelho se for menor que dez e azul se for maior ou igual a dez.
+</h1>
+<h2>
+   var tabela = document.getElementById("tbnota");<br>
+    var nota;<br>
+    
+    for(i=1;i<tabela.rows.length;i++){<br>
+    
+        nota=parseFloat(tabela.rows[i].cells[1].innerHTML)+parseFloat(tabela.rows[i].cells[2].innerHTML);<br>
+        tabela.rows[i].cells[3].innerHTML=nota;<br>
+
+
+    }<br>
+var n=[]<br>
+n[0]=document.getElementById("n1")<br>
+n[1]=document.getElementById("n2")<br>
+n[2]=document.getElementById("n3")<br>
+n[3]=document.getElementById("n4")<br>
+
+//n[0].innerHTML="444" altera valor<br>
+//n[0].innerHTML=n[0].innerHTML+"444" concatena<br>
+//alert(n[0].innerHTML)mostra valor<br>
+
+for(var i=0;i<4;i++){<br>
+    if(n[i].innerHTML>=60){<br>
+        n[i].style.color="green"<br>
+    }else{<br>
+        n[i].style.color="red"<br>
+    }
+}
+
+
+</h2>
+<h1>slide</h1>
+
+<h2>
+  var imgs=[];
+        var slider;
+        var imgatual;
+        var maximg
+        var tmp
+        var tptroca;
+        var vtempo;
+        var vbarra;
+
+
+
+    function precareg(){
+        var f=1
+        for(var i=0;i<4;i++){
+            imgs[i]=new Image();
+            imgs[i].src="imgs/f"+f+".jpg";
+            f++;
+        }
+
+        }
+    
+    function caregimg(img){
+        slider.style.backgroundImage="url('"+imgs[img].src+"')"
+
+    }
+    function iniciar(){
+        precareg()
+        imgatual=1;
+        maximg=imgs.length;
+        precareg()
+        slider=document.getElementById("sli")
+        vbarra=document.getElementById("barra")
+        caregimg(imgatual)
+        tptroca=0;
+       //tmp=setInterval(troca,2000)
+       anima();
+    }
+    function anima(){
+        tptroca++;
+        if(tptroca>=500){
+            tptroca=0;
+            troca(1);
+
+        }
+        vtempo=tptroca/5;
+        vbarra.style.width=vtempo+"%";
+        
+        window.requestAnimationFrame(anima);
+    }
+    function troca(dir){
+        tptroca=0;
+        imgatual+=dir;
+        if(imgatual>maximg){
+            imgatual=0;
+        }else if(imgatual<0){
+            imgatual=maximg;
+        }
+        caregimg(imgatual)
+    }
+   window.addEventListener("load",iniciar)
+ 
+
+
+</h2>
+
+<h1>
+set attrbute
+
+</h1>
+<h2>
+
+ function tc(c){
+       var obj= document.getElementById("carro");
+            if(c==1){
+                obj.setAttribute("class","c1");
+            }else if(c==2){
+                obj.setAttribute("class","c2");
+    
+    }else if(c==3){
+                obj.setAttribute("class","c3");
+            }
+        }
+        function rc(){
+            var obj=document.getElementById("carro");
+            obj.removeAttribute("class");
+        }
+        function ver(){
+            var obj=document.getElementById("carro");
+            if ( obj.hasAttribute("class") ) {
+                alert("Tiene atributo");
+            }else{
+                alert("No tiene atributo");
+            }}
+        
+
+</h2>
+</body>
 	</html>
